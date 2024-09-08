@@ -1,6 +1,7 @@
 "use client"
 
 import Home from "../(routes)/home/home";
+import Button from "../_components/button/button";
 import Navbar from "../_components/navbar/navbar";
 import { datadogLogs } from '@datadog/browser-logs';
 import { datadogRum } from '@datadog/browser-rum';
@@ -38,6 +39,7 @@ export default function Main() {
     <>
       <Navbar/>
       <Home/>
+      <Button label="Another cool button"/>
     </>
   );
 }
